@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Check Your Bill</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Enter Mobile Number to View Bill</h1>
+    <input type="text" id="mobileNumber" placeholder="Enter 10-digit Mobile Number" maxlength="10">
+    <button onclick="fetchBill()">Show Bill</button>
+    
+    <div id="billSection" class="hidden">
+      <h2>Billing Details</h2>
+      <p><strong>Mobile:</strong> <span id="billMobile"></span></p>
+      <p><strong>Name:</strong> <span id="billName"></span></p>
+      <p><strong>Amount Due:</strong> ₹<span id="billAmount"></span></p>
+      <p><strong>Due Date:</strong> <span id="billDueDate"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
